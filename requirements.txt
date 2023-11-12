@@ -1,0 +1,4 @@
+flask
+urllib3
+google-generativeai==0.2.1
+vertexai
