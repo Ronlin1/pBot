@@ -1,23 +1,17 @@
 from flask import Flask, render_template, request, jsonify, flash
 import time
-
-import pangea.exceptions as pe
-import pangea.services.authn.models as m
-from pangea.config import PangeaConfig
-from pangea.services.authn.authn import AuthN
 import requests
 
-# Pangea API endpoint for user creation
+# Pangea multi pBot API endpoint 
 token = "pts_h6nko2dtxo3xg4wwairw5qygmdsy3oob"
 
 # Intel Endpoints
-
 ip_intel_url = 'https://ip-intel.aws.eu.pangea.cloud/v1/reputation'
 domain_intel_url = 'https://domain-intel.aws.eu.pangea.cloud/v1/whois'
 user_intel_url = 'https://user-intel.aws.eu.pangea.cloud/v1/user/breached'
 
 headers = {
-    'Authorization': 'Bearer pts_h6nko2dtxo3xg4wwairw5qygmdsy3oob',
+    'Authorization': 'Bearer {token}',
     'Content-Type': 'application/json',
 }
 
