@@ -140,4 +140,4 @@ def submit_user():
         return jsonify({'error': 'User not provided'}), 400
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
