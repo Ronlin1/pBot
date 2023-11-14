@@ -69,9 +69,7 @@ def submit_domain():
             result = response.json().get('result', {})
             data = result.get('data', {})
             
-            domain_name = data.get('domain_name', '')
             created_date = data.get('created_date', '')
-            updated_date = data.get('updated_date', '')
             expires_date = data.get('expires_date', '')
             host_names = data.get('host_names', [])
             ips = data.get('ips', [])
@@ -84,9 +82,8 @@ def submit_domain():
 
             # Construct a simplified response
             simplified_response = {
-                'domain_name': domain_name,
+
                 'created_date': created_date,
-                'updated_date': updated_date,
                 'expires_date': expires_date,
                 'host_names': host_names,
                 'ips': ips,
