@@ -139,5 +139,5 @@ def submit_user():
     except KeyError:
         return jsonify({'error': 'User not provided'}), 400
 
-if __name__ == '__main__':
-    app.run()
+# if __name__ == '__main__':
+#     app.run()
