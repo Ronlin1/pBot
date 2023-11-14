@@ -11,7 +11,7 @@ domain_intel_url = 'https://domain-intel.aws.eu.pangea.cloud/v1/whois'
 user_intel_url = 'https://user-intel.aws.eu.pangea.cloud/v1/user/breached'
 
 headers = {
-    'Authorization': 'Bearer {token}',
+    'Authorization': f'Bearer {token}',
     'Content-Type': 'application/json',
 }
 
@@ -139,5 +139,5 @@ def submit_user():
     except KeyError:
         return jsonify({'error': 'User not provided'}), 400
 
-# if __name__ == '__main__':
-#     app.run()
+if __name__ == '__main__':
+    app.run(debug=True)
