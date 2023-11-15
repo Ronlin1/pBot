@@ -4,7 +4,6 @@ Building On Pangea Made Easier
 ## pBot: Enhancing Cybersecurity through Intelligent Automation
 ![Overview](OVERVIEW.PNG)
 
-
 ## Motivation and Research
 
 The genesis of pBot can be traced back to the obstacles encountered while integrating APIs and SDKs into the mPoint Hub, a cybersecurity hub based in Uganda. Amidst trials with bots like ChatGPT, Bard, and Bing, only Bard provided information, albeit with prompt modifications.
@@ -22,14 +21,18 @@ pBot, a chatbot leveraging Google Bard Palm API, is structured into three key co
 
 
 ## Contributions
-See Contribsutions file
+See Contributions file.
 
 ## Next Steps
 
 pBot's evolution hinges on continuous improvement, aiming to maximize capabilities and train it with custom Pangea data. This open-source project welcomes contributions and operates under the MIT license.
 
+## Current Issues I am Fixing
+- Fix Responsiveness on Mobile
+- Use Environment keys for API Secrets
+
 ## Useful URLS
 
-- [Read More](#)  
+- [Read More](https://blog.octachart.com/crafting-pbot-as-a-pinnacle-ai-assitant-for-the-pangea-community)  
 - [Visit pBot](https://pangeabot.surge.sh/)  
-- [Video Demo](#)
+- [Video Demo](https://www.youtube.com/watch?v=mGrxvCZlnBg)
