@@ -40,25 +40,56 @@ const Router = () => {
 
         </Routes>
         {authenticated && (
-          <div
+          <div>
+            <div
+              style={{
+                // display: 'flex',
+                
+                alignItems: 'center',
+                marginLeft: '180px',
+                marginTop: '-180px',
+              
+                height: '100%',
+                
+              }}
+            >
+              <iframe
+                title="pBot"
+                src="https://ronlin.pythonanywhere.com/"
+                style={{ width: '600px', height: '510px' }}
+              />
+            </div>
+
+
+            <div  
             style={{
               // display: 'flex',
               
               alignItems: 'center',
-              marginLeft: '300px',
-              marginTop: '-180px',
-             
+              marginLeft: '800px',
+              marginTop: '-520px',
+            
               height: '100%',
               
             }}
-          >
+            >
             <iframe
-              title="pBot"
-              src="https://ronlin.pythonanywhere.com/"
-              style={{ width: '600px', height: '510px' }}
+              title="intel"
+              src="https://pangea.onrender.com/"
+              style={{ width: '400px', height: '510px' }}
             />
-          </div>
+            </div>  
+        </div>            
         )}
+
+    {!authenticated && (
+      <img
+      src="https://i.postimg.cc/7Zq9rLMk/p-Bot1-1.png"
+      alt="pBot"
+      style={{ width: '800px', height: '500px', marginTop: '-70px', marginLeft: '200px' }}
+    />
+    )}
+
       </div>
       <Footer />
     </div>
